@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.movie__banner {
+  width: 100%;
+  height: 420px;
+  background-color: #231F20;
+}
+.movie__trailer {
+  width: 1400px;
+}
+.movie__trailer .btn {
+  color: #fff;
+}
+.movie__box {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.movie__slider {
+  height: 420px;
+  width: 100%;
+  color: #1567C3;
+}
+.movie__slider img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.movie__options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.movie__options-choose {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+.movie__options-choose .button__playing {
+  background-color: #231f20;
+  color: #cdc197;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  width: 175px;
+  height: 50px;
+  background: url(./img/btn_movie_playing.gif) center/cover no-repeat;
+  text-decoration: none;
+}
+.movie__options-choose .button__upcoming {
+  background-color: #efebdb;
+  color: #6f6247;
+  width: 175px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.movie__options-list, .movie__options-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.movie__options-list .box, .movie__options-list2 .box {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.movie__options-list2 {
+  display: none;
+}
+.movie__options .button_seeMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  padding: 8px 0;
+  color: #231f20;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.movie__options .button_seeMore:hover {
+  opacity: 0.8;
+}
+
+.card-movie {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dedede;
+  width: 228px;
+}
+.card-top {
+  position: relative;
+}
+.card-top .img {
+  height: 334px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.card-top .img:hover + .btn {
+  display: flex;
+}
+.card-top .num {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  z-index: 10;
+  color: #fff;
+  font-family: "linlivertine";
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 45px;
+}
+.card-top .btn {
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 11;
+  display: none;
+}
+.card-top .btn-component {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #c0b687;
+  text-decoration: none;
+  width: 188px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #c0b687;
+}
+.card-top .btn:hover {
+  display: flex;
+}
+.card-middle {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.card-middle .seats {
+  background-color: #1567C3;
+  color: #DBE4F3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.card-middle .seats .active {
+  background-color: #088210;
+}
+.card-middle .name-movie {
+  color: #231f20;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-size: 13px;
+  line-height: 30px;
+  border-top: 1px solid #dedede;
+}
+.card-bottom .line-middle {
+  width: 1px;
+  height: 10px;
+  background-color: #777777;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
